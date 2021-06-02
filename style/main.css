@@ -1,0 +1,104 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* elementos base*/
+body{    
+    background: var(--preto);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+header .Logo{
+    width: 10%;
+    margin: 20px 50px 20px 50px;
+    cursor: pointer;
+}
+header .inicio{
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 15px;       
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/*filme principal*/
+
+
+.filme-principal{   
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Greys-Anatomy-capa.jpg');
+    height: 400px;    
+    background-size: cover;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid red;
+}
+.filme-principal .container{
+    margin-left: 50px;    
+}
+
+.filme-principal .titulo{
+    width: 300px;    
+}
+
+.filme-principal .descricao{
+    margin: 20px 0px ; 
+    width: 500px;
+    height: 95px;
+    
+}
+
+.filme-principal .botoes .botao{   
+    margin: 0px 5px 1px 1px;
+    border: none;    
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.filme-principal .botoes .botao i{
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.filme-principal .botoes .botao:nth-child(1){
+    background-color: rgba(249,249,249,.80);
+    color: black;
+}
+.filme-principal .botoes .botao:nth-child(2){
+    color: white;
+    background-color: rgba(100,100,100,.80);
+}
+
+.filme-principal .botoes .botao:hover{
+    background-color: white;
+    background: rgba(160,160,160,.50)
+}
+
+
