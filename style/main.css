@@ -6,34 +6,34 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    text-decoration: none;   
 }
 /* elementos base*/
-body{    
+body{        
     background: var(--preto);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-header .container{
+header .container{      
     display: flex;
     flex-direction: row;
-    align-items: center;
-
+    align-items: center;    
 }     
 
-header .Logo{
-    width: 10%;
-    margin: 1.5% 2% 1.5% 2%;
+header .Logo{    
+    width: 200px;
+    margin: 20px 50px 20px 50px;
     cursor: pointer;
 }
 
 
-header nav a{        
+header nav a {      
     font-size: 200%;
     text-decoration: none;
     color: #AAA;
-    margin: 1%;     
+    margin-right: 15px;       
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -46,7 +46,7 @@ header nav a:hover{
 
 .filme-principal{       
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Greys-Anatomy-capa.jpg');
-    height: 100%;    
+    height: 1200px;    
     width: 100%;
     background-size: cover;   
     display: flex;
@@ -55,7 +55,10 @@ header nav a:hover{
     align-items: flex-start;    
 }
 .filme-principal .container{
-     margin:20% 10% 10% 3%;       
+     margin:20% 10% 10% 3%;  
+     width: 100%;
+     height: 100%;  
+        
 }
 
 .filme-principal .titulo{
@@ -64,7 +67,7 @@ header nav a:hover{
 
 .filme-principal .descricao{
     margin: 1% 50% 0 0% ; 
-    max-width: 90%;
+    width: 60%;
     font-size: 300%;
 }
 
@@ -103,3 +106,11 @@ header nav a:hover{
     display: block;
 }
 
+.carrosel-filmes .filmes{
+font-size: 50px;
+margin:1% 1% 1% 3%;
+}
+.carrosel-series .series{
+    font-size: 50px;
+    margin:0.5% 1% 1% 3%;
+    }
